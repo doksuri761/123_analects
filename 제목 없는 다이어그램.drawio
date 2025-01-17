@@ -1,146 +1,163 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.6">
   <diagram name="Page-1" id="e7e014a7-5840-1c2e-5031-d8a46d1fe8dd">
-    <mxGraphModel dx="1408" dy="748" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1593" dy="864" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="2" value="Thread 1" style="swimlane;whiteSpace=wrap" parent="1" vertex="1">
-          <mxGeometry x="164.5" y="128" width="280" height="570" as="geometry" />
+        <mxCell id="2" value="SRV" style="swimlane;whiteSpace=wrap" parent="1" vertex="1">
+          <mxGeometry x="164.5" y="128" width="280" height="782" as="geometry" />
         </mxCell>
-        <mxCell id="5" value="" style="ellipse;shape=startState;fillColor=#000000;strokeColor=#ff0000;" parent="2" vertex="1">
-          <mxGeometry x="100" y="40" width="30" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="6" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#FF0000;endFill=1;rounded=0" parent="2" source="5" target="7" edge="1">
-          <mxGeometry x="100" y="40" as="geometry">
-            <mxPoint x="115" y="110" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="7" value="idle" style="" parent="2" vertex="1">
-          <mxGeometry x="60" y="110" width="110" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="8" value="user action" style="" parent="2" vertex="1">
-          <mxGeometry x="60" y="220" width="110" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="9" value="" style="endArrow=open;strokeColor=#FF0000;endFill=1;rounded=0" parent="2" source="7" target="8" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="10" value="post command" style="" parent="2" vertex="1">
-          <mxGeometry x="60" y="325" width="110" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="11" value="" style="endArrow=open;strokeColor=#FF0000;endFill=1;rounded=0" parent="2" source="8" target="10" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="12" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;strokeColor=#FF0000;endArrow=open;endFill=1;rounded=0" parent="2" source="10" target="7" edge="1">
+        <mxCell id="12" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;strokeColor=#FF0000;endArrow=open;endFill=1;rounded=0" parent="2" source="10" edge="1">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
             <mxPoint x="160" y="290" as="sourcePoint" />
-            <mxPoint x="260" y="190" as="targetPoint" />
+            <mxPoint x="60" y="135" as="targetPoint" />
             <Array as="points">
               <mxPoint x="30" y="250" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="3" value="Thread 2" style="swimlane;whiteSpace=wrap" parent="1" vertex="1">
-          <mxGeometry x="444.5" y="128" width="280" height="570" as="geometry" />
-        </mxCell>
-        <mxCell id="13" value="" style="ellipse;shape=startState;fillColor=#000000;strokeColor=#ff0000;" parent="3" vertex="1">
-          <mxGeometry x="60" y="40" width="30" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="14" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#FF0000;endFill=1;rounded=0" parent="3" source="13" target="15" edge="1">
-          <mxGeometry x="40" y="20" as="geometry">
-            <mxPoint x="55" y="90" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="15" value="idle" style="" parent="3" vertex="1">
-          <mxGeometry x="20" y="110" width="110" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="16" value="check for &#xa;new commands" style="" parent="3" vertex="1">
-          <mxGeometry x="20" y="220" width="110" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="17" value="" style="endArrow=open;strokeColor=#FF0000;endFill=1;rounded=0" parent="3" source="15" target="16" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="18" value="command queue" style="" parent="3" vertex="1">
-          <mxGeometry x="20" y="325" width="110" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="19" value="" style="endArrow=open;strokeColor=#FF0000;endFill=1;rounded=0" parent="3" source="16" target="18" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="21" value="queue empty" style="rhombus;fillColor=#ffffc0;strokeColor=#ff0000;" parent="3" vertex="1">
-          <mxGeometry x="150" y="225" width="80" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="22" value="yes" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#FF0000;exitX=0.5;exitY=0;endFill=1;rounded=0;entryX=0.75;entryY=0.5;entryPerimeter=0" parent="3" source="21" target="25" edge="1">
-          <mxGeometry x="-1" relative="1" as="geometry">
-            <mxPoint x="160" y="150" as="targetPoint" />
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="2" source="TnuhhpCbNera9kqxi1Ev-44" target="TnuhhpCbNera9kqxi1Ev-46">
+          <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="190" y="180" />
+              <mxPoint x="136" y="262" />
+              <mxPoint x="76" y="262" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="23" value="no" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#FF0000;endFill=1;rounded=0" parent="3" source="21" target="30" edge="1">
-          <mxGeometry x="-1" relative="1" as="geometry">
-            <mxPoint x="190" y="305" as="targetPoint" />
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-48" value="실패" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="TnuhhpCbNera9kqxi1Ev-47">
+          <mxGeometry x="-0.2722" relative="1" as="geometry">
+            <mxPoint x="-60" y="39" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="24" value="" style="endArrow=open;strokeColor=#FF0000;endFill=1;rounded=0" parent="3" source="16" target="21" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="25" value="" style="shape=line;strokeWidth=6;strokeColor=#ff0000;rotation=90" parent="3" vertex="1">
-          <mxGeometry x="130" y="127.5" width="50" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="26" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#FF0000;endFill=1;rounded=0" parent="3" source="25" target="15" edge="1">
-          <mxGeometry x="130" y="90" as="geometry">
-            <mxPoint x="230" y="140" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="30" value="dispatch&#xa;command&#xa;worker thread" style="" parent="3" vertex="1">
-          <mxGeometry x="140" y="325" width="110" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="31" value="critical&#xa;section" style="shape=note;whiteSpace=wrap;size=17" parent="3" vertex="1">
-          <mxGeometry x="105" y="490" width="100" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="32" value="" style="endArrow=none;strokeColor=#FF0000;endFill=0;rounded=0;dashed=1" parent="3" source="18" target="31" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="34" value="" style="whiteSpace=wrap;strokeColor=#FF0000;fillColor=#FF0000" parent="3" vertex="1">
-          <mxGeometry x="245" y="395" width="5" height="45" as="geometry" />
-        </mxCell>
-        <mxCell id="41" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;entryX=0;entryY=0.5;strokeColor=#FF0000;endArrow=open;endFill=1;rounded=0" parent="3" source="30" target="34" edge="1">
-          <mxGeometry width="100" height="100" relative="1" as="geometry">
-            <mxPoint x="60" y="480" as="sourcePoint" />
-            <mxPoint x="160" y="380" as="targetPoint" />
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="2" source="TnuhhpCbNera9kqxi1Ev-44" target="TnuhhpCbNera9kqxi1Ev-49">
+          <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="195" y="400" />
+              <mxPoint x="136" y="262" />
+              <mxPoint x="206" y="262" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="4" value="Thread 3" style="swimlane;whiteSpace=wrap" parent="1" vertex="1">
-          <mxGeometry x="724.5" y="128" width="280" height="570" as="geometry" />
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-64" value="성공" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="TnuhhpCbNera9kqxi1Ev-50">
+          <mxGeometry x="0.5297" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="33" value="process&#xa;command" style="" parent="4" vertex="1">
-          <mxGeometry x="90" y="405" width="110" height="50" as="geometry" />
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-44" value="&lt;div&gt;DB 검증&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+          <mxGeometry x="75.5" y="102" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="35" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;strokeColor=#FF0000;endArrow=open;endFill=1;rounded=0;entryX=0.25;entryY=0.5;entryPerimeter=0" parent="4" target="25" edge="1">
-          <mxGeometry width="100" height="100" relative="1" as="geometry">
-            <mxPoint x="-30" y="410" as="sourcePoint" />
-            <mxPoint x="-120" y="120" as="targetPoint" />
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-46" value="폐기" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+          <mxGeometry x="15.5" y="352" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-49" value="&lt;div&gt;서버 내 Secret키&lt;/div&gt;&lt;div&gt;AES 암호화&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+          <mxGeometry x="145.5" y="352" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-65" value="복호화 이후&lt;div&gt;HWID 서버 보관&lt;/div&gt;&lt;div&gt;Auth Key 발급&lt;/div&gt;&lt;div&gt;(HWID + ServerSalt&lt;/div&gt;&lt;div&gt;SHA512 Hexdigest&lt;/div&gt;&lt;div&gt;8Digits)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+          <mxGeometry x="75.5" y="463" width="120" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Client" style="swimlane;whiteSpace=wrap" parent="1" vertex="1">
+          <mxGeometry x="444.5" y="128" width="280" height="782" as="geometry" />
+        </mxCell>
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-41" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="3">
+          <mxGeometry x="125.5" y="32" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-42" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="TnuhhpCbNera9kqxi1Ev-41" parent="3" target="TnuhhpCbNera9kqxi1Ev-43">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="40.5" y="122" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-43" value="클라이언트 인증서&lt;div&gt;내부의 Cert ID&lt;/div&gt;&lt;div&gt;AES 암호화&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="3">
+          <mxGeometry x="80.5" y="102" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="3" source="TnuhhpCbNera9kqxi1Ev-51" target="TnuhhpCbNera9kqxi1Ev-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-51" value="클라이언트 인증서&lt;div&gt;내부 키와 비교&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="3">
+          <mxGeometry x="80" y="352" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-53" value="HWID + Secret Key&lt;br&gt;AES 암호화" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="3">
+          <mxGeometry x="80.5" y="482" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="3" source="TnuhhpCbNera9kqxi1Ev-67" target="TnuhhpCbNera9kqxi1Ev-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-67" value="보관 후 앱 기동 Auth시 사용" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="3">
+          <mxGeometry x="60.75" y="632" width="159.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-69" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="3">
+          <mxGeometry x="125.5" y="732" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TnuhhpCbNera9kqxi1Ev-43" target="TnuhhpCbNera9kqxi1Ev-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TnuhhpCbNera9kqxi1Ev-49" target="TnuhhpCbNera9kqxi1Ev-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TnuhhpCbNera9kqxi1Ev-53" target="TnuhhpCbNera9kqxi1Ev-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TnuhhpCbNera9kqxi1Ev-65" target="TnuhhpCbNera9kqxi1Ev-67">
+          <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="-10" y="135" />
+              <mxPoint x="300" y="790" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="37" value="" style="edgeStyle=none;strokeColor=#FF0000;endArrow=open;endFill=1;rounded=0" parent="4" target="33" edge="1">
-          <mxGeometry width="100" height="100" relative="1" as="geometry">
-            <mxPoint x="-30" y="429.5" as="sourcePoint" />
-            <mxPoint x="90" y="429.5" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-71" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;앱 설치 이후&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Initial 로그인&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="380" y="50" width="130" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="38" value="" style="ellipse;shape=endState;fillColor=#000000;strokeColor=#ff0000" parent="4" vertex="1">
-          <mxGeometry x="130" y="500" width="30" height="30" as="geometry" />
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-72" value="SRV" style="swimlane;whiteSpace=wrap" vertex="1" parent="1">
+          <mxGeometry x="800" y="128" width="280" height="782" as="geometry" />
         </mxCell>
-        <mxCell id="39" value="" style="endArrow=open;strokeColor=#FF0000;endFill=1;rounded=0" parent="4" source="33" target="38" edge="1">
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-101" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="TnuhhpCbNera9kqxi1Ev-72" source="TnuhhpCbNera9kqxi1Ev-98" target="TnuhhpCbNera9kqxi1Ev-100">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="20" value="" style="endArrow=open;strokeColor=#FF0000;endFill=1;rounded=0" parent="1" source="10" target="18" edge="1">
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-98" value="복호화, 검증 후&lt;div&gt;Temp Key 발급&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="TnuhhpCbNera9kqxi1Ev-72">
+          <mxGeometry x="70" y="102" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-100" value="앱 세션동안 사용후&lt;div&gt;3시간 이상 미 사용&lt;/div&gt;&lt;div&gt;OR&lt;/div&gt;&lt;div&gt;폐기 요청시 폐기&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="TnuhhpCbNera9kqxi1Ev-72">
+          <mxGeometry x="70" y="242" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-103" value="TempKey&lt;div&gt;UserName + HWID&lt;/div&gt;&lt;div&gt;+ Time(E.g. 250117120024)&lt;/div&gt;&lt;div&gt;SHA256 Hash&lt;/div&gt;&lt;div&gt;Hexdigest&lt;/div&gt;&lt;div&gt;16 Digits&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="TnuhhpCbNera9kqxi1Ev-72">
+          <mxGeometry x="70" y="332" width="120" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-104" value="&lt;div&gt;Raw&lt;/div&gt;홍길동fbed07dfbe70fbe0edfb7250117120024&lt;div&gt;&lt;div&gt;Sha256&lt;/div&gt;&lt;div&gt;e2f04e8896a82f3b&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="TnuhhpCbNera9kqxi1Ev-72">
+          <mxGeometry x="17.5" y="452" width="245" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-82" value="Client" style="swimlane;whiteSpace=wrap" vertex="1" parent="1">
+          <mxGeometry x="1080" y="128" width="280" height="782" as="geometry" />
+        </mxCell>
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-83" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="TnuhhpCbNera9kqxi1Ev-82">
+          <mxGeometry x="125.5" y="32" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-84" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="TnuhhpCbNera9kqxi1Ev-82" source="TnuhhpCbNera9kqxi1Ev-83">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140.49999999999955" y="102" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="TnuhhpCbNera9kqxi1Ev-82" source="TnuhhpCbNera9kqxi1Ev-102" target="TnuhhpCbNera9kqxi1Ev-91">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140.61538461538476" y="691.9999999999998" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-91" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="TnuhhpCbNera9kqxi1Ev-82">
+          <mxGeometry x="125.5" y="732" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-97" value="Username, AuthKey&lt;div&gt;(JSON)&lt;br&gt;&lt;div&gt;HWID를 키로&lt;/div&gt;&lt;div&gt;AES 암호화 전송&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="TnuhhpCbNera9kqxi1Ev-82">
+          <mxGeometry x="80" y="102" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-102" value="저장 후&lt;div&gt;요청시&lt;/div&gt;&lt;div&gt;Header에 입력&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="TnuhhpCbNera9kqxi1Ev-82">
+          <mxGeometry x="80" y="242" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-96" value="&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Initial 로그인 이후&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;User Login&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1015.5" y="50" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TnuhhpCbNera9kqxi1Ev-97" target="TnuhhpCbNera9kqxi1Ev-98">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-106" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Client Certificate&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK: str: 8B Hex&lt;/td&gt;&lt;td&gt;CertID&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Key: str: 32B Hex&lt;/td&gt;&lt;td&gt;Certkey&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IssueDate: int: DateTime&lt;/td&gt;&lt;td&gt;Time&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;SerialNo: str: 6B Hex&lt;/td&gt;&lt;td&gt;E.g. b1ad2f&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="494.5" y="20" width="230" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="TnuhhpCbNera9kqxi1Ev-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TnuhhpCbNera9kqxi1Ev-100" target="TnuhhpCbNera9kqxi1Ev-102">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
